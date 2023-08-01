@@ -87,7 +87,3 @@ You then get the inference results and evaluation results in the paths:`ie_dirs/
 ```bash
 python run.py train experiments/spider-configs/gap-run.jsonnet
 ```
-
-## License
-
-This project is licensed under the Apache-2.0 License.
