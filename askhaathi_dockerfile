@@ -1,0 +1,19 @@
+#Stage1:take python3.7 as base image
+FROM python:3.7-slim-buster 
+
+RUN apt update && apt upgrade -y && \    
+    apt-get install --no-install-recommends build-essential cmake -y
+    
+#set working directory
+WORKDIR /AskHaathi
+   
+#Copy req.txt and install python packages
+COPY . /AskHaathi
+#RUN pip install  -r /AskHaathi/AskHaathi/gap-text2sql/rat-sql-gap/req.txt 
+RUN python3 -m nltk.downloader stopwords    
+
+
+CMD ["/bin/bash"]
+
+#CMD ["uvicorn", "gap-text2sql/rat-sql-gap/fastapi_demo:app","--host=0.0.0.0","--port=8080","--reload"]
+
