@@ -1,10 +1,8 @@
 # GAP-text2SQL: Learning Contextual Representations for Semantic Parsing with Generation-Augmented Pre-Training
 
-Code and model from our [AAAI 2021 paper](https://arxiv.org/abs/2012.10309)
-
 ## Updates
 
-[2020/02/05] Support to run the model on own databases and queries. Check out the [notebook](rat-sql-gap/notebook.ipynb). 
+Support to run the model on own databases and queries. Check out the [notebook](rat-sql-gap/notebook.ipynb). 
 
 ## Abstract
 
@@ -89,10 +87,6 @@ You then get the inference results and evaluation results in the paths:`ie_dirs/
 ```bash
 python run.py train experiments/spider-configs/gap-run.jsonnet
 ```
-
-## Security
-
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
 
 ## License
 
